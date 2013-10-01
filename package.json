@@ -1,0 +1,28 @@
+{
+    "name": "ivyjs",
+    "version": "0.0.1",
+    "author": "Jonny Reeves <john@jonnyreeves.co.uk>",
+    "contributors": [
+    ],
+    "description": "JavaScript wrapper for Apache Ivy",
+    "keywords": [
+        "ivy",
+        "dependency"
+    ],
+    "homepage": "http://github.com/jonnyreeves/ivyjs",
+    "main": "./index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jonnyreeves/ivyjs.git"
+    },
+    "dependencies": {
+        "xml-writer": "1.4.0",
+		"temp": "0.6.0"
+    },
+    "devDependencies": {
+    },
+    "license": "Apache",
+    "engines": {
+        "node": ">=0.4.0"
+    }
+}
