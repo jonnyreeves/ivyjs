@@ -1,11 +1,25 @@
 var ivyjs = require("../");
 
-var ivy = ivyjs();
+var ivy = ivyjs({
+	organisation: "com.example",
+	module: "example"
+});
 
-var dependencies = [
-	{ org: "commons-lang", name: "commons-lang", rev: "5.0" }
-];
+var resolveOptions = {
+	/*ivyFile: "ivy.xml",*/
+	organisation: "foo.bar",
+	module: "epicmod",
+	dependencies: [
+		{ org: "commons-lang", name: "commons-lang", rev: "2.0" }
+	]
+}
 
-ivy.resolve(dependencies, function (err, result)
+ivy.resolve(resolveOptions, function (err, result)
 {
+	if (err) {
+		console.log(err);
+	}
+	else {
+		console.log(result);
+	}
 });
